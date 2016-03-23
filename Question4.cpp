@@ -69,3 +69,34 @@ public:
 		return action;
 	}
 };
+
+class Dog :public Animal
+{
+public:
+	Dog()
+	{
+		anName = "Dog";
+		action = "Bark";
+	}
+
+	Dog(string nameIn, string actionIn)
+	{
+		anName = nameIn;
+		action = actionIn;
+	}
+
+	~Dog(){
+
+	}
+
+	string name()
+	{
+		return;
+	}
+
+	string does()
+	{
+		return action;
+	}
+};
+
