@@ -61,7 +61,7 @@ public:
 
 	string name()
 	{
-		return ;
+		return anName;
 	}
 
 	string does()
@@ -91,7 +91,7 @@ public:
 
 	string name()
 	{
-		return;
+		return anName;
 	}
 
 	string does()
@@ -100,3 +100,10 @@ public:
 	}
 };
 
+int main()
+{
+	Animal *bird = new Bird();
+	cout << bird->name() << " " << bird->does() << endl;
+
+	return 0;
+}
