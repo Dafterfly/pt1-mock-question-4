@@ -36,6 +36,36 @@ public: Animal(){
 
 		}
 
-		virtual void name() = 0;
-		virtual void does() = 0;
+		virtual string name() = 0;
+		virtual string does() = 0;
+};
+
+class Bird : public Animal
+{
+public:
+	Bird()
+	{
+		anName = "Bird";
+		action = "Fly";
+	}
+
+	Bird(string nameIn, string actionIn)
+	{
+		anName = nameIn;
+		action = actionIn;
+	}
+
+	~Bird(){
+
+	}
+
+	string name()
+	{
+		return ;
+	}
+
+	string does()
+	{
+		return action;
+	}
 };
