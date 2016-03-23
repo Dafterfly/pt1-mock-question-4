@@ -102,8 +102,29 @@ public:
 
 int main()
 {
+	// testing if methods themselves work:
 	Animal *bird = new Bird();
 	cout << bird->name() << " " << bird->does() << endl;
+
+	Animal *dog = new Dog();
+	cout << dog->name() << " " << dog->does() << endl;
+
+	// using arrays and loop
+	Animal *petshop[2];
+
+	// acquire animals
+	Bird birdie;
+	Dog doggie;
+
+	// Put them in cage
+	petshop[0] = &birdie;
+	petshop[1] = &doggie;
+
+	cout << "What's in the petshop?" << endl;
+	for (int i = 0; i < 2; i++)
+	{
+		cout << "A " << petshop[i]->name() << " that " << petshop[i]->does() << endl;
+	}
 
 	return 0;
 }
